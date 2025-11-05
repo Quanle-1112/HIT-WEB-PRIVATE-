@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+}
+button {
+  cursor: pointer;
+}
+
+.card{
+    width: 260px; 
+    height: 390px;
+    background-color: rgb(223, 146, 146);
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 16px;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all 0.5s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px); 
+  box-shadow: 0 8px 40px red; 
+}
+
+.avarta{
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+.avarta img{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;   
+  border: 3px solid hsl(0, 93%, 45%);
+  margin: 5px auto;  
+ transition: all 0.4s ease; 
+
+}
+.avarta img:hover{
+    transform: translateY(-10px);
+     box-shadow: 0 10px 15px rgba(18, 3, 3, 0.3);
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #c4b6b6, #dde0e5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.desciption{
+    padding: 10px;
+
+}
+.name{
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin: auto;
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}   
+.job{
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    font-weight:bold ;
+    color: yellow;  
+     text-align: center;
+     margin: 6px;
+}
+.jobdecription{
+    font-size: 14px;
+    margin: 19px;
+    color: aliceblue;
+    text-align: center;
+    font-weight: bold;
+}
+.icon{
+  display: flex;
+  justify-content: center;
+  gap: 22px; 
+  margin-top: 22px;
+}
+
+.icon button{
+    width: 40px;
+    height: 40px;
+    border:none;
+    justify-content: center;
+    background-color: #e1d5d5;
+    transition: all 0.3s ease;
+    box-shadow:0 0 10px gray;
+}
+.facebook{
+    font-size: 20px;
+    border-radius: 50%;
+    color: rgb(254, 254, 254);
+
+}
+.facebook:hover{
+    transform: translateY(-5px);
+    color: white;
+}
+.gitHub{
+    font-size: 20px;
+    border-radius: 50%;
+    color: rgb(254, 254, 254);
+}
+.gitHub :hover{
+    transform: translateY(-5px);
+    color: white;
+}
+.instagram{
+    font-size: 20px;
+    border-radius: 50%;
+    color: white(254, 254, 254);
+}
+.instagram:hover{
+    transform: translateY(-5px);
+    color:white;
+}
