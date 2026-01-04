@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p class="content">
+      The house is in a quiet area. It is not in the city centre. There are find
+      a cat and a dog in the farm next to the house
+    </p>
+    <button class="btn">Click me</button>
+    <script>
+      const content = document.querySelector(".content");
+      const button = document.querySelector(".btn");
+      const contentText = content.textContent;
+      const preview =
+        contentText.length > 30
+          ? contentText.slice(0, 30) + "..."
+          : contentText;
+      content.textContent = preview;
+      let isShowingPreview = true;
+      button.addEventListener("click", () => {
+        if (isShowingPreview) {
+          content.textContent = contentText;
+          button.textContent = "Thu Gọn";
+        } else {
+          content.textContent = preview;
+          button.textContent = "Thu Gọn";
+        }
+        isShowingPreview = !isShowingPreview;
+      });
+    </script>
+  </body>
+</html>
